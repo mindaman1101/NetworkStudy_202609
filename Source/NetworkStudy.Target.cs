@@ -8,8 +8,9 @@ public class NetworkStudyTarget : TargetRules
 	public NetworkStudyTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V6;
+        DefaultBuildSettings = BuildSettingsVersion.Latest;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
-		ExtraModuleNames.AddRange( new string[] { "NetworkStudy" } );
+        ExtraModuleNames.AddRange( new string[] { "NetworkStudy" } );
 	}
 }
